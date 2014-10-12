@@ -1,0 +1,255 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<meta name="author" content="Adrian Dalca" />
+<meta name="description" content="Personal webpage of Adrian Dalca" />
+<meta name="keywords" content="student,mit,website,graduate,adrian dalca" />
+
+<title>Nikhil Khandelwal's Personal Website</title>
+
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="./css/style-ie.css" />
+<![endif]-->
+</head>
+<body>
+
+<div id="main_container">
+
+    <!--  MAIN  NAVIGATION--> 
+    <div id="main_navigation" class="main-menu ">
+        <ul>  <li><a href="./contact.html">Contacts</a></li>
+        <li><a href="./projects.html">Projects</a> </li> 
+            <li><a href="./index.html" title="Home">Home</a></li> 
+            
+           
+        </ul> 
+    </div>
+    
+<div class="page_content">
+  
+  
+  <div id="header_container">
+    <div id="headshot">
+        <img src="./headshot.jpg"  align="middle"/>
+    </div>
+    
+    <div id="main_info_container">
+     
+        <h1 style="width:250px;">Nikhil Khandelwal</h1>
+                         
+         <div style="position: absolute; float: right; right:20px;">
+         <img src="ublogo.gif" height= 150; width=200;/>
+         </div>
+                 
+        <div class="pages_post_descr">
+        
+            <div class="pages_post_descr_main">
+            
+            
+           Master's Student, 
+            
+              <br />
+              <a href="http://www.cse.buffalo.edu/">Computer Science and Engineering</a><a href="http://www.buffalo.edu/" target="_blank">
+              <br />
+              University of Buffalo</a><br />
+              <br />
+              <strong>Contact</strong>:<br />
+              121 Heath St, Buffalo, 14214.&nbsp;<br />
+            nikhilkh at buffalo dot edu<br />
+            <br />
+            <a href="./index.html#curriculum">CV</a> | <a href="./Resume.pdf">Resume</a> | <a href="https://www.linkedin.com/pub/nikhil-khandelwal/45/b8b/76/">Linkedin</a>
+            </div>
+        </div>    	
+    </div>
+</div>
+            
+<h1>Projects</h1>
+<p>The following lists most of the projects, academic or otherwise, that I've worked on.  </p>
+
+ <!--Machine Learning projects--> 
+
+<h2>Machine Learning</h2>
+<div class="archive_post"> <img src="./Handwriting_Recognition.png" alt="" title="" border="" class="post_thumb" />
+  <h4>Handwritten Digits Classification<a href="#"></a></h4>
+  <p>Classifying handwritten digits by implementing four machine learning techniques a) Neural Networks, b) K- Nearest
+Neighbors, c)Logistic Regression, d) Support Vector Machines and compare their performance.: </p>
+
+<ul style="margin-left:100px">
+  <li>Classified the data set using Neural Network works and use Feed Forward, Back Propagation to implement Neural Network
+  </li>
+  <li>Classified the same data set using k-Nearest Neighbor (kNN) , Logistic Regression and SVN approach </li>
+</ul>
+</div>
+<div class="archive_post"> <img src="diabetes.jpg" alt="" title="" border="" class="post_thumb" />
+  <h4>Predicting Diabetes Level in patients<a href="#"></a></h4>
+  <p>Predicting diabetes level in patients using four machine learning techniques a) Liner Regression, b) Ridge Regression c)
+Ridge Regression using Gradient descent, d)Non-Linear Regression and compare their performance. </p>
+
+<ul style="margin-left:100px">
+  <li>Using the results obtained to make recommendations for anyone using regression for predicting diabetes level </li>
+</ul>
+</div>
+
+
+ <!--Machine Learning projects end--> 
+  
+  <!--Distributed systems projects--> 
+  <h2>Distributed Systems</h2>
+  
+<div class="archive_post"><img src="dynamo.jpg" alt="" title="" border="" class="post_thumb" />
+  <h4>Simplified Amazon Dynamo (Replicated Key-Value Storage)</h4>
+  <p>Implemented a Amazon Dynamo-style key-value storage. The three main functionality implemented were 1) Partitioning, 2) Replication, and 3) Failure handling in a Distributed system
+The main goal is to provide both availability and linearizability at the same time.</p>
+
+<ul style="margin-left:97px">
+<li>Implemented Quorum replication with replication degree 3 and versioned all objects to differentiate between stale copies.</li>
+  <li>  Handled node failures and ensured that when any node recovers/rejoins it should be updated with most recent copies</li>
+</ul>
+</div>
+
+<div class="archive_post"><img src="dht.jpg" alt="" title="" border="" class="post_thumb" />
+  <h4>Distributed Hash Table</h4>
+  <p>Designed a simple DHT based on Chord protocol on android devices. There were upto 5 android devices that could participate to form a distributed network to store key-values pairs.
+  </p>
+
+<ul style="margin-left:97px">
+<li>There are three main things that the protocol handled: 1) ID space partitioning/re-partitioning when new node joined, 2) Ring-based routing system to store/retrieve messages in the correct node, and 3) Handle new node joins(upto5 nodes)</li>
+  <li> The content provider on android devices supported insert and query operations. Thus, if multiple devices in a network ran the app, all content provider instances formed a Chord ring and serve insert/query requests in a distributed fashion according to the Chord protocol.</li>
+</ul>
+</div>
+
+<div class="archive_post"><img src="messenger.jpg" alt="" title="" border="" class="post_thumb" />
+  <h4>Totally and Causally Ordered Group Messenger</h4>
+  <p>Designed and implemented a Group messenger application for Android devices using Multi threading and Java Networking that preserves total ordering as well as causal ordering of all messages.
+ </p>
+
+
+<ul style="margin-left:97px">
+<li>Content providers were used to maintain  key-value table that each device uses to individually store all messages on its local storage.</li>
+  <li>  Implemented vector clock at each process to maintained happened before relationship within messages.</li>
+  <li>Implemented a centralized sequencer to assign totally ordered identifiers to multicast messages so that each process makes the same ordering decision based upon these identifiers.</li>
+</ul>
+</div>
+
+
+
+
+
+<!--Distributes systems project ends--> 
+
+<!--Big Data Projects--> 
+
+<h2>Big Data</h2>
+<div class="archive_post"><img src="hadoop.jpg" alt="" title="" border="" class="post_thumb" />
+  <h4>Twiiter data analysis using Hadoop MapReduce</h4>
+  <p>We aggregated interesting data from Twitter for different ranges of dates (week-range, month-range).Aggregated raw data was cleansed to some extend before analyzing it using R and Hadoop MapReduces.</p>
+
+<ul style="margin-left:97px">
+
+<li>Designed and implemented the MR work flows to extract various information from the real time data of Twitter (approx
+1GB). For instance: simple word count, # tag counts, @ counts etc.</li>
+<li> For popular hash tags, a connected network of tweeter-follower was created. Then we implemented the parallel breadth first search algorithm using Hadoop MapReduce to find the shortest path between users in the network</li>
+<li>We clustered the tweeters by the number of followers they have,into three groups, low, medium and high respectively. This clustering was performed using Kmeans Clustering algorithm, implemented using hadoop MapReduce.</li>
+</ul>
+</div>
+
+<!--Big Data Projects end--> 
+
+
+<!-- Information Retrieval--> 
+
+<h2>Information Retrieval</h2>
+<div class="archive_post"><img src="nlp.jpg" alt="" title="" border="" class="post_thumb" />
+  <h4>Natural Language Processing based Question Answering System</h4>
+  <p>Generated a back end from the Wikipedia corpus using Apache Solr and implemented a front end using J2EE technologies.The system could take in free text
+  queries in English and generate a context aware answer to the query. The system was immune to simple spelling mistakes and also suggested 
+  similar topics to search about.
+</p>
+
+<ul style="margin-left:97px">
+
+<li>Generated a back end from the Wikipedia corpus using Apache Solr and implemented a front end using J2EE technologies.</li>
+<li>Advanced features like spell check and auto complete were also implemented using AJAX and JavaScript.</li>
+</ul>
+</div>
+
+<div class="archive_post"><img src="wikipedia.jpg" alt="" title="" border="" class="post_thumb" />
+  <h4>Wikipedia Inexer</h4>
+<p> We took the big Wikipedia dump(10 GB) and processed it using Java. The courpus was clened , parsede and indexed, we also exposed an interface using which a user could 
+query the system and read data in different forms.  
+</p>
+
+<ul style="margin-left:97px">
+
+<li>SAX parser was used to parse the wikipedia corpus which is in XMl format </li>
+<li> After baisc cleaning, we tokenzed the text using regular expressions. The tokenized data was then indexed and persisted in DB along with the word count for the whole corpus.  </li>
+</ul>
+</div>
+
+<!--Big Data Projects end--> 
+
+ <h2>Side Projects</h2>
+ 
+ <div class="archive_post"><img src="iremember.jpg" alt="" title="" border="" class="post_thumb" />
+  <h4>iRemember - An app for telling your stories</h4>
+<p> iRemember is an android app that captures the stories of your life, connects them to the places where they happened, and lets
+others see locations in a new way -- through your eyes.
+With iRemember, users capture their stories in a variety of media: text, audio, photos or video. After
+capturing the story, the app allows users to give it a title and to annotate it with text tags and location
+information.
+</p>
+
+
+
+<div class="archive_post"><img src="twitterandroid.jpg" alt="" title="" border="" class="post_thumb" />
+  <h4>Twitter Client for Android</h4>
+<p> The app could update the twitter status and also had a timeline to show recent activity on the twitter news feed.
+The app was made to self learn the android framework and used all main building blocks like, Activity, Services, Content Provider, Preferences.
+I used the twitter4j java api to login to twitter via OAuth and other functions like, acessing timeline and postin status.
+</p>
+</div>
+ 
+ <div class="archive_post"><img src="stackoverflow.jpg" alt="" title="" border="" class="post_thumb" />
+  <h4>A Stackover Flow style Q&A blog website using Ruby on Rails</h4>
+  <p>
+  The app will consist of users and their associated question (thus constituting a minimalist StackOverFlow style app).The app will have users, question, ability for other user to answer these questions,
+  and a full login and authentication framework. The appliction will also provide every user to upvote answers, whcih will in turn give the OP a karma point. Also no user with karma less than 10 will be able to vote.  
+
+</p>
+
+<ul style="margin-left:97px">
+
+<li>Link to the <a href="http://warm-dawn-8289.heroku.com/" title="Home">project.</a></li>
+</ul>
+</div>
+</div>
+ 
+ 
+  </div>
+  
+                    	
+
+  <div class="blue_divider"></div> 
+
+</div><!--end of main_container--> 
+
+<div style="height:1px;"></div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-477540-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
