@@ -84,6 +84,16 @@ body {
  text-align:right;
  color:#cccccc;
 }
+
+p .footer
+{
+ height:30px;
+ padding:10px 60px 0 0;
+ background-color:#000000;
+ text-align:right;
+ color:#cccccc;
+}
+
 h2 {
 	font-size: 25px;
 	display:inline;
