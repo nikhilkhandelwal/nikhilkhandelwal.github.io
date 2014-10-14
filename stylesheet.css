@@ -85,12 +85,13 @@ body {
  color:#cccccc;
 }
 
-p .footer
+d .footer
 {
+float: right;
  height:30px;
  padding:10px 60px 0 0;
  background-color:#000000;
- text-align:right;
+ 
  color:#cccccc;
 }
 
